@@ -47,4 +47,4 @@ and the periodicity of unitcell and supercell, simply call
 ExpandHR(uchrfile, ucorbitalfile, ucposcarfile, scposcarfile; ucperiodicity, scperiodicity)
 ```
 
-Here all the file is a path string. No need to align position or orientation, just make sure the supercell contains at least one copy of the unitcell.
+Here all the file is a path string, and periodicity is a vector with three arbitrary 1(0). No need to align position or orientation, just make sure the supercell contains at least one copy of the unitcell.
