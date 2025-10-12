@@ -240,7 +240,7 @@ function expanduc(cell::Cell, n::Integer)
 	name = repeat(cell.name, n + 1)
 	index = repeat(cell.index, n + 1)
 
-	return Cell(cell.lattice, location; name, index, period)
+	return Cell(cell.lattice, location; location_type = "Cartesian", name, index, period)
 end
 
 """

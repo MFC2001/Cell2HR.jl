@@ -37,7 +37,7 @@ end
 
 function SuperCell(location::AbstractVector{<:AbstractVector{<:Real}},
 	lattice::Lattice{<:Real},
-	period::AbstractVector{<:AbstractString};
+	period::AbstractVector{Bool};
 	index::AbstractVector{<:Integer} = Int[],
 	name::AbstractVector{<:AbstractString} = String[],
 )::SuperCell

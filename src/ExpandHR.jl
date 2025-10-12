@@ -1,8 +1,8 @@
 
 """
-	ExpandHR(unithr::HR, unitorbital::ORBITAL, unitcell::Cell, cell::Cell; keywords)
+	ExpandHR(unithr::HR, unitorbital::ORBITAL, unitcell::Cell, cell::Cell; kwargs...)
 
-Used when cell is larger than unit cell.
+Used when cell is larger than unitcell.
 
 Requirements:
 
@@ -21,7 +21,7 @@ and they should satisfy `cell.period` is equal to or less than `unitcell.period`
 
 Recommend that `cell` don't have lattice distortion, but `cell` can lack a few atoms.
 If `cell` lack many atoms, recommend to use finduc=:custom, 
-that means the unitcell is the correct unit, and don't need to rotate or translate it.
+that means the unitcell has the correct position and orientation, and don't need to rotate or translate it.
 
 
 Keywords: 

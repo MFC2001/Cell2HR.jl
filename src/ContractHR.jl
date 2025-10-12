@@ -1,6 +1,6 @@
 
 """
-	ContractHR(superhr::HR, superorbital::ORBITAL, supercell::Cell, cell::Cell; keywords)
+	ContractHR(superhr::HR, superorbital::ORBITAL, supercell::Cell, cell::Cell; kwargs...)
 
 Used when cell is equal to or less than supercell.
 

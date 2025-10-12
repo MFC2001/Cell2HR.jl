@@ -6,6 +6,7 @@ using LinearAlgebra
 using StaticArrays
 using StructEquality
 
+import Dates
 using Printf
 using DelimitedFiles
 
@@ -24,5 +25,7 @@ include("./ExpandHR.jl")
 include("./ContractHR.jl")
 
 include("./shell.jl")
+
+include("./MultipleHR.jl")
 
 end
