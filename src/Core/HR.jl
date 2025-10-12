@@ -7,6 +7,15 @@ struct HR{T <: Number}
 	path::Matrix{Int} # [N,5]
 	value::Vector{T}
 end
+"""
+	HR(path::AbstractMatrix{<:Integer}, value::AbstractVector{T};
+		orbindex = sort(unique(path[:, 4:5])), μ::Real = 0, hrsort = 'N')::HR{T} where {T <: Number}
+
+Create a HR object from path and value. `path` is a N*5 matrix, each row is [Rx, Ry, Rz, i, j], `value` is a vector of length N.
+`orbindex` is the orbital index list, default is 1:norb.
+`μ` is the fermi energy shift, default is 0.
+`hrsort` is whether to sort the hr by path, default is 'N', can be 'Y' or 'N'.
+"""
 function HR(path::AbstractMatrix{<:Integer}, value::AbstractVector{T};
 	orbindex = sort(unique(path[:, 4:5])), μ::Real = 0, hrsort = 'N')::HR{T} where {T <: Number}
 

@@ -14,6 +14,20 @@ struct ORBITAL{OT <: Real, AT <: Real}
 	atom_name::Vector{String}
 	belonging::Vector{Int} # The orbitals is belongs to which atom.
 end
+"""
+	ORBITAL(location::AbstractVector;
+		name = String[],
+		index = Int[],
+		atom_location = CartesianCoordinates{Float64}[],
+		atom_name = String[],
+		belonging = Int[],
+	)
+Create an `ORBITAL` object.
+
+`name` and `index` is the name and index of each orbital.
+`atom_location` and `atom_name` is the location and name of each atom.
+`belonging` is the index of atom which each orbital belongs to.
+"""
 function ORBITAL(
 	location::AbstractVector;
 	name = String[],
