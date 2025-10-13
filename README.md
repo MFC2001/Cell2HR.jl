@@ -1,4 +1,4 @@
-# Cell2HR
+# Cell2HR.jl
 
 [![Build Status](https://github.com/MFC2001/Cell2HR.jl/actions/workflows/CI.yml/badge.svg?branch=master)](https://github.com/MFC2001/Cell2HR.jl/actions/workflows/CI.yml?query=branch%3Amaster)
 
@@ -22,13 +22,17 @@ julia> import Pkg; Pkg.add("Cell2HR")
 
 ## Quick start
 
-This package provide two functions 'ExpandHR' and 'ContractHR', type `?` to enter
+This package provide two functions `ExpandHR` and `ContractHR`, type `?` to enter
 the [Help mode](https://docs.julialang.org/en/v1/stdlib/REPL/#Help-mode) and run:
 ```julia
 help?> ExpandHR
 help?> ContractHR
 ```
 for the full docstrings.
+
+## Multi-threads
+
+This package support Julia's native multi-threading acceleration. All you need to do is set the number of threads.
 
 ## Zero-knowledge workflow
 

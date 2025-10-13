@@ -6,7 +6,7 @@ using LinearAlgebra
 using StaticArrays
 using StructEquality
 
-import Dates
+using Dates: Dates
 using Printf
 using DelimitedFiles
 
