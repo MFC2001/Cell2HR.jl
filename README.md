@@ -10,7 +10,7 @@ The package can be installed with the Julia package manager.
 From [the Julia REPL](https://docs.julialang.org/en/v1/stdlib/REPL/), type `]` to enter
 the [Pkg mode](https://docs.julialang.org/en/v1/stdlib/REPL/#Pkg-mode) and run:
 
-```julia-repl
+```julia
 pkg> add Cell2HR
 ```
 
@@ -32,7 +32,7 @@ for the full docstrings.
 
 ## Multi-threads
 
-This package support Julia's native multi-threading acceleration. All you need to do is set the number of threads.
+This package support Julia's native multi-threading acceleration. All you need to do is setting the number of threads.
 
 ## Zero-knowledge workflow
 
@@ -48,7 +48,7 @@ If you already have
 and the periodicity of unitcell and supercell, simply call
 
 ```julia
-ExpandHR(uchrfile, ucorbitalfile, ucposcarfile, scposcarfile; ucperiodicity, scperiodicity)
+julia> ExpandHR(uchrfile, ucorbitalfile, ucposcarfile, scposcarfile; ucperiodicity, scperiodicity)
 ```
 
 Here all the file is a path string, and periodicity is a vector with three arbitrary 1(0). No need to align position or orientation, just make sure the supercell contains at least one copy of the unitcell.
