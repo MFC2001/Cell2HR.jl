@@ -32,6 +32,7 @@ function hrsplit(hr::HR, cell::Cell, orbital_belonging::AbstractVector{<:Integer
 		Tatompath = index2atom(orbital_index[i], orbital_index[j], hr.path, hr_index)
 		Natompath[i, j] = length(Tatompath)
 		if Natompath[i, j] == 0
+			atompath[i, j] = AtomPath[]
 			continue
 		end
 

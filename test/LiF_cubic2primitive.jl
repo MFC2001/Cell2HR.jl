@@ -1,8 +1,10 @@
 
-unitcellfolder = "../data/LiF/unitcell/"
-supercellfolder = "../data/LiF/supercell/"
+unitcellfolder = joinpath(@__DIR__, "../data/LiF/unitcell/")
+supercellfolder = joinpath(@__DIR__, "../data/LiF/supercell/")
 
-ContractHR(
+include(joinpath(@__DIR__, "../src/Cell2HR.jl"))
+import .Cell2HR as CH
+CH.ContractHR(
 	joinpath(supercellfolder, "wannier90_hr.dat"),
 	joinpath(supercellfolder, "wannier90_centres.xyz"),
 	joinpath(supercellfolder, "POSCAR"),

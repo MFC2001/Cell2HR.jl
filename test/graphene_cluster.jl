@@ -1,6 +1,6 @@
 
-unitcellfolder = "../data/graphene/unitcell/"
-supercellfolder = "../data/graphene/supercell/"
+unitcellfolder = joinpath(@__DIR__, "../data/graphene/unitcell/")
+supercellfolder = joinpath(@__DIR__, "../data/graphene/supercell/")
 
 ExpandHR(
 	joinpath(unitcellfolder, "wannier90_hr.dat"),

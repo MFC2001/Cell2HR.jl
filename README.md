@@ -24,10 +24,12 @@ julia> import Pkg; Pkg.add("Cell2HR")
 
 This package provide two functions `ExpandHR` and `ContractHR`, type `?` to enter
 the [Help mode](https://docs.julialang.org/en/v1/stdlib/REPL/#Help-mode) and run:
+
 ```julia
 help?> ExpandHR
 help?> ContractHR
 ```
+
 for the full docstrings.
 
 ## Multi-threads
@@ -40,10 +42,10 @@ If you already have
 
 | File            | Content                                               |
 | --------------- | ----------------------------------------------------- |
-| `uchrfile`      | unitcell hopping terms (`wannier90_hr.dat`)         |
-| `ucorbitalfile` | unitcell orbital positions (`wannier90_centres.xyz`) |
-| `ucposcarfile`  | unitcell structure (`POSCAR.vasp`)                   |
-| `scposcarfile`  | target supercell structure (`POSCAR.vasp`)           |
+| `uchrfile`      | unitcell hopping terms (`wannier90_hr.dat`)           |
+| `ucorbitalfile` | unitcell orbital positions (`wannier90_centres.xyz`)  |
+| `ucposcarfile`  | unitcell structure (`POSCAR.vasp`)                    |
+| `scposcarfile`  | target supercell structure (`POSCAR.vasp`)            |
 
 and the periodicity of unitcell and supercell, simply call
 

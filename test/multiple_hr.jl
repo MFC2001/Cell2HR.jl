@@ -1,9 +1,9 @@
 
-unitcellfolder = "../data/graphene/unitcell/"
-supercellfolder = "../data/graphene/supercell/"
+unitcellfolder = joinpath(@__DIR__, "../data/graphene/unitcell/")
+supercellfolder = joinpath(@__DIR__, "../data/graphene/supercell/")
 
 ExpandHR(
-	fill(joinpath(unitcellfolder, "wannier90_hr.dat"), 3),
+	fill(joinpath(unitcellfolder, "wannier90_hr.dat"), 2),
 	joinpath(unitcellfolder, "wannier90_centres.xyz"),
 	joinpath(unitcellfolder, "graphene.vasp"),
 	joinpath(supercellfolder, "C6.vasp");
@@ -13,11 +13,11 @@ ExpandHR(
 )
 
 
-unitcellfolder = "../data/LiF/unitcell/"
-supercellfolder = "../data/LiF/supercell/"
+unitcellfolder = joinpath(@__DIR__, "../data/LiF/unitcell/")
+supercellfolder = joinpath(@__DIR__, "../data/LiF/supercell/")
 
 ContractHR(
-	fill(joinpath(supercellfolder, "wannier90_hr.dat"), 3),
+	fill(joinpath(supercellfolder, "wannier90_hr.dat"), 2),
 	joinpath(supercellfolder, "wannier90_centres.xyz"),
 	joinpath(supercellfolder, "POSCAR"),
 	joinpath(unitcellfolder, "POSCAR");
