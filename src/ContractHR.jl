@@ -120,7 +120,7 @@ function contracthr(cell::Cell, supercell::Cell, super_atomhr::AtomHR, EpsPara::
 
 	atompath = [Vector{AtomPath}(undef, 0) for _ in 1:num_atom, _ in 1:num_atom]
 	lk = ReentrantLock()
-	for (i, j_super) in [(i, j) for i in Base.OneTo(num_atom), j in Base.OneTo(super_num_atom)]
+	Threads.@threads for (i, j_super) in [(i, j) for i in Base.OneTo(num_atom), j in Base.OneTo(super_num_atom)]
 		i_super = atom_index[i][1]
 		j = atom_index_super[j_super]
 
