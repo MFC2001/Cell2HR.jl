@@ -1,7 +1,7 @@
 name = "Cell2HR"
 uuid = "5c73846f-6712-4eb1-b84d-78fe4ff3efce"
 authors = ["FanchenMeng <mengfc011220@gmail.com> and contributors"]
-version = "1.0.0"
+version = "1.0.1"
 
 [deps]
 Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
